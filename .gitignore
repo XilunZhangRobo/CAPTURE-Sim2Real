@@ -1,0 +1,44 @@
+
+*/logdir/*
+
+# Distribution / packaging
+*.egg-info/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# mac
+.DS_Store
+
+# mujoco-key
+mjkey.txt
+
+.mujocomanip_temp_model.xml
+
+.idea
+.pytest_cache/
+
+# private macros
+macros_private.py
+
+robosuite-benchmark/
+
+*.zip
+*.npz
+*.pkl
+*.npy
+*.pt
+data/
+
+out/*
+PPO_Pusher_Tensorboard/*
+SAC_Pusher_Tensorboard/*
+wandb/*
+
+
+*.txt
+*/wandb/*
+
+# data
+data/
+config/

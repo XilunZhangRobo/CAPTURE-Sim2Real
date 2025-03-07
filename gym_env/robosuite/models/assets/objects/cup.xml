@@ -1,0 +1,15 @@
+<mujoco model="cup">
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom pos="0 0 0" size="0.0255 0.00235" type="cylinder" solimp="0.998 0.998 0.001" solref="-10000 -5" density="1240" friction="0 0 0" rgba="0 1 0 1" group="0" condim="6"  />
+      </body>
+        <option>
+          <flag multiccd="enable"/>
+        </option>
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 -0.06" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 0.04" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.005" pos="0.025 0.025 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

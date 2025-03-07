@@ -1,0 +1,19 @@
+<mujoco model="milk">
+  <asset>
+    <mesh file="meshes/milk.msh" name="milk_mesh" scale="0.9 0.9 0.9"/>
+    <texture file="../textures/ceramic.png" name="tex-ceramic" type="2d"/>
+    <material name="ceramic" reflectance="0.5" texrepeat="1 1" texture="tex-ceramic" texuniform="true"/>
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object" pos="0 0 0.4">
+        <!-- <geom pos="0 0.1113 0.8" quat="1.0 0 0 0" size="0.43 0.21 0.02" type="box" solimp="0.998 0.998 0.001" solref="-10000 -25" density="1240" friction="0.013 0.3 0.1" group="0" condim="6" rgba="0.1 0.6 0.6 0.8" /> -->
+        <!-- <geom pos="0 0.8 0.2" size="0.8 0.8 0.4" type="plane" group="0" name="table_collision" friction="1 0.3 0.1" rgba="0.1 0.6 0.6 0.3" condim="3"/> -->
+        <geom pos="0 0.80 0" size="0.8 0.8 0.4" type="box" group="0" name="table_collision" friction="0.05 0.3 0.1" rgba="0.1 0.6 0.6 0.3" condim="3"/>
+      </body>
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 -0.085" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 0.075" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.005" pos="0.025 0.025 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

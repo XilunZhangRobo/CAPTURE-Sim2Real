@@ -1,0 +1,17 @@
+<mujoco model="spatula">
+  <asset>
+    <mesh file="meshes/spatula.stl" name="spatula_mesh" scale="0.7 0.45 0.7"/>
+    <texture file="../textures/bread.png" type="2d" name="tex-bread" />
+    <material name="spatula" reflectance="0.7" texrepeat="15 15" texture="tex-bread" texuniform="true"/>
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom pos="0 0 0" quat="0 0.149 0 0.988" mesh="spatula_mesh" type="mesh" material="spatula" conaffinity="0" contype="0" group="1"/>
+      </body>
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 -0.045" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 0.03" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.005" pos="0.03 0.03 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

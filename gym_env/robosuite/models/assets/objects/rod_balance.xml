@@ -1,0 +1,36 @@
+<mujoco model="rod_balance">
+  <asset>
+    <!-- Assert for the celery -->
+    <mesh file="meshes/celery.obj" name="celery_mesh" scale="0.8 0.7 0.8"/>
+
+    <!-- <mesh file="meshes/celery.stl" name="celery_mesh" scale="2 2 2"/> -->
+    <texture file="../textures/celery.png" name="tex-celery" type="2d"/>
+    <material name="celery" reflectance="0.7" texrepeat="15 15" texture="tex-celery" texuniform="true"/>
+
+
+  </asset>
+  <worldbody>
+    <body>
+        <body name="object">
+        <geom pos="0.015 0 0.02"  quat="0.7071068 0 0 0.7071068"  mesh="celery_mesh" type="mesh"  material="celery" conaffinity="0" contype="0" group="1"/>
+
+        <geom pos="0 0 0" size="0.018 0.101 0.018" type="box" solimp="0.998 0.998 0.001" 
+        solref="-10000 -15" density="50" friction="0.013 0.3 0.1" rgba="0 0 1 0." group="0" condim="6"  />
+
+          <body name="rod_com">
+              <geom pos="0 0 0" size="0.018 0.018 0.018" type="box" solimp="0.998 0.998 0.001" 
+              solref="-10000 -15" density="15000" friction="0.013 0.3 0.1" rgba="1 1 0 0." group="0" condim="6"  />
+          </body>
+          
+          
+
+      </body>
+        <option>
+          <flag multiccd="enable"/>
+        </option>
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 -0.06" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.005" pos="0 0 0.04" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.005" pos="0.025 0.025 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

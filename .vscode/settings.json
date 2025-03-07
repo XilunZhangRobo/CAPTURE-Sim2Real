@@ -1,0 +1,20 @@
+{
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "arange",
+    "astype",
+    "downsample",
+    "downsampled",
+    "dtype",
+    "extrap",
+    "figsize",
+    "interp",
+    "pbar",
+    "rollouts",
+    "Tensorboard",
+    "timestep",
+    "timesteps",
+    "traj",
+    "wandb"
+  ]
+}
