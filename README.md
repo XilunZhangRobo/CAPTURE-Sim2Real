@@ -26,10 +26,11 @@ In order to collect dataset and train the transformer models, you can run:
 
 ## Citation
 ```
-@article{zhang2024dynamics,
+@article{zhang2025dynamics,
   title={Dynamics as Prompts: In-Context Learning for Sim-to-Real System Identifications},
   author={Zhang, Xilun and Liu, Shiqi and Huang, Peide and Han, William Jongwon and Lyu, Yiqi and Xu, Mengdi and Zhao, Ding},
-  journal={arXiv preprint arXiv:2410.20357},
-  year={2024}
+  journal={IEEE Robotics and Automation Letters},
+  year={2025},
+  publisher={IEEE}
 }
 ```
