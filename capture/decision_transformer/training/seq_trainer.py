@@ -9,13 +9,6 @@ class SequenceTrainer(Trainer):
     def train_step(self):
         states, actions, rewards, dones, rtg, timesteps, attention_mask = self.get_batch()
         action_target = torch.clone(actions)
-        # print ('train',states.shape, states[45])
-        # print ('train',actions.shape, actions[45])
-        # print ('train',rewards.shape, rewards[45])
-        # print ('train',rtg[45])
-        # print ('train',timesteps.shape, timesteps[45])
-        # print ('train',attention_mask.shape, attention_mask[45])
-        # input()
         state_preds, action_preds, reward_preds = self.model.forward(
             states, actions, rewards, rtg[:,:-1], timesteps, attention_mask=attention_mask,
         )

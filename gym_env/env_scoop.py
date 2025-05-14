@@ -4,18 +4,11 @@ from robosuite.controllers import controller_factory
 
 import gym
 import numpy as np
-import time
 import cv2
 import imageio
 import copy
-import matplotlib.pyplot as plt
-from stable_baselines3.common.env_checker import check_env
 from stable_baselines3.common.utils import set_random_seed
-import pickle as pkl
 from scipy.spatial.transform import Rotation
-
-
-
 
 class Scoop_Balance_mujoco(gym.Env):
     

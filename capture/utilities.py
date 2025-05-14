@@ -1,9 +1,6 @@
 import gym
 import numpy as np
-import torch
 from torch.optim.lr_scheduler import _LRScheduler
-from stable_baselines3.common.vec_env.subproc_vec_env import SubprocVecEnv
-from stable_baselines3.common.vec_env.dummy_vec_env import DummyVecEnv
 
 
 class NormalizeActionSpaceWrapper(gym.ActionWrapper):

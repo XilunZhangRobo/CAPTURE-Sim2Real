@@ -262,7 +262,6 @@ def main():
         # plot the trajectory of cup
         cup_traj = env.get_state_traj(info)
         print ("cup_traj", cup_traj[0])
-        # print (cup_traj.shape)
         ## save the trajectory
         plt.plot(cup_traj[:, 0], cup_traj[:, 1], label=f"{damping_range[i]}")
 
